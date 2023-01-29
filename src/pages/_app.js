@@ -20,12 +20,27 @@ const theme = createTheme({
     },
   },
   typography: {
+    h2: {
+      marginTop: 0,
+      marginBottom: "48px",
+      fontSize: "32px",
+      lineHeight: "36px",
+      fontWeight: 700,
+    },
     h3: {
       marginTop: "20px",
       marginBottom: "10px",
       fontSize: "24px",
       lineHeight: "30px",
       fontWeight: 700,
+    },
+    h4: {
+      marginTop: "10px",
+      marginBottom: "10px",
+      fontSize: "18px",
+      lineHeight: "24px",
+      fontWeight: 700,
+      textAlign: "left",
     },
     p: {
       fontSize: "14px",

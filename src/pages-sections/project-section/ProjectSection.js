@@ -1,9 +1,10 @@
 import React from "react";
 import Image from "next/image";
-
-import profilePic from "../../../public/img/bilgekaan.png";
 import { Box, Grid, styled, Button, Typography } from "@mui/material";
+
 import Wrapper from "@/components/Wrapper/Wrapper";
+import bakery from "../../../public/img/projects/bakery.jpg";
+import workshop from "../../../public/img/projects/car-workshop.jpg";
 
 const StyledBox = styled(Box)(({ theme }) => ({
   backgroundColor: "black",
@@ -12,26 +13,21 @@ const StyledBox = styled(Box)(({ theme }) => ({
   color: "#f8f8f8",
 }));
 
-const StyledArgumentationHeader = styled(Typography)(({ theme }) => ({
-  marginTop: 0,
-  marginBottom: "48px",
-  fontSize: "32px",
-  lineHeight: "36px",
-  fontWeight: 700,
-  textAlign: "center",
-}));
-
 const ProjectSection = () => {
   return (
     <StyledBox>
       <Wrapper>
-        <StyledArgumentationHeader>
-          Mit leidenschaft dabei seit Anfang an
-        </StyledArgumentationHeader>
+        <Typography variant='h2' sx={{ textAlign: "center" }}>
+          Kunden die ich bereits unterstützt habe
+        </Typography>
+        <Typography variant='h3' sx={{ textAlign: "center" }}>
+          Viele Ideen und zahlreiche Projekte umgesetzt
+        </Typography>
         <Grid
           container
           rowSpacing={{ xs: 1, sm: 2, md: 3 }}
           columnSpacing={{ xs: 1, sm: 2, md: 3 }}
+          sx={{ marginBottom: "24px" }}
         >
           <Grid item xs={12} sm={6}>
             <div
@@ -39,13 +35,13 @@ const ProjectSection = () => {
                 position: "relative",
                 borderRadius: "6px",
                 overflow: "hidden",
-                height: 300,
+                height: 350,
                 width: "100%",
               }}
             >
               <Image
-                src={profilePic}
-                alt='Picture of the author'
+                src={bakery}
+                alt='Picture of the bakery'
                 provided='true'
                 automatically='true'
                 fill
@@ -53,33 +49,141 @@ const ProjectSection = () => {
             </div>
           </Grid>
           <Grid item xs={12} sm={6}>
-            <p
-              style={{
-                marginBottom: "24px",
-                color: "#8b8b8b",
+            <Typography variant='h4'>
+              Bilgekaan Yilmaz, Yilmaz Bäckerei GbR
+            </Typography>
+            <Box
+              sx={{
+                marginBottom: "12px",
               }}
             >
-              Seit 2016 bin ich in der Web Entwicklung zuhause und habe schon
-              zahlreiche Web & App Projekte umgesetzt, begleitet und erfolgreich
-              gelaunched. Dabei weiß ich genau welche Fallstricke man beachten
-              muss um ein erfolgreiches Projekt auf die Beine zu stellen.
-              Außerdem kann Ich Dich unabhängig von einer möglichen
-              Zusammenarbeit beraten, damit Du die beste Lösung für Dein Projekt
-              erreichen kannst.
-              <br />
-              <br />
-              Als Dein verlässlicher Partner bringe ich mit:
-            </p>
+              <Typography variant='p' sx={{ color: "#8b8b8b" }}>
+                <strong style={{ color: "white" }}>Herausforderung:</strong> Das
+                Frontend umfasst alles, was der Benutzer einer Software oder
+                einer Webseite sieht, berührt und erlebt. Das Back-End bezieht
+                sich auf alles, was der Benutzer einer Software oder einer
+                Website nicht sehen kann.
+              </Typography>
+            </Box>
 
-            <ul className='expert-list'>
-              <li>über 100 Web & App Projekte umgesetzt</li>
-              <li>6 Jahre in der Web & App Entwicklung</li>
-              <li>über 10 Jahre Erfahrung in der IT</li>
-              <li>Erhöhte persönliche Erreichbarkeit</li>
-            </ul>
-            <Button variant='contained'>Lass uns reden</Button>
+            <Box
+              sx={{
+                marginBottom: "12px",
+              }}
+            >
+              <Typography variant='p' sx={{ color: "#8b8b8b" }}>
+                <strong style={{ color: "white" }}>Herausforderung:</strong> Das
+                Frontend umfasst alles, was der Benutzer einer Software oder
+                einer Webseite sieht, berührt und erlebt. Das Back-End bezieht
+                sich auf alles, was der Benutzer einer Software oder einer
+                Website nicht sehen kann.
+              </Typography>
+            </Box>
+            <Box
+              sx={{
+                marginBottom: "12px",
+              }}
+            >
+              <Typography variant='p' sx={{ color: "#8b8b8b" }}>
+                <strong style={{ color: "white" }}>Herausforderung:</strong> Das
+                Frontend umfasst alles, was der Benutzer einer Software oder
+                einer Webseite sieht, berührt und erlebt. Das Back-End bezieht
+                sich auf alles, was der Benutzer einer Software oder einer
+                Website nicht sehen kann.
+              </Typography>
+            </Box>
           </Grid>
+          <Typography variant='p' sx={{ textAlign: "center", padding: "12px" }}>
+            »Piri Web betreut uns mittlerweile schon über 2 Jahre und unsere
+            Wünsche wurden immer übertroffen. Ich schätze an Piri Web besonders
+            die schnelle Verfügbarkeit bei Rückfragen und die Transparenz in der
+            Prozessgestaltung.«
+          </Typography>
         </Grid>
+        <Grid
+          container
+          rowSpacing={{ xs: 1, sm: 2, md: 3 }}
+          columnSpacing={{ xs: 1, sm: 2, md: 3 }}
+          sx={{ marginBottom: "24px" }}
+        >
+          <Grid item xs={12} sm={6}>
+            <div
+              style={{
+                position: "relative",
+                borderRadius: "6px",
+                overflow: "hidden",
+                height: 350,
+                width: "100%",
+              }}
+            >
+              <Image
+                src={workshop}
+                alt='Picture of the bakery'
+                provided='true'
+                automatically='true'
+                fill
+                objectFit='cover'
+              />
+            </div>
+          </Grid>
+          <Grid item xs={12} sm={6}>
+            <Typography variant='h4'>
+              Bilgekaan Yilmaz, Kfz-Werkstatt Yilmaz
+            </Typography>
+            <Box
+              sx={{
+                marginBottom: "12px",
+              }}
+            >
+              <Typography variant='p' sx={{ color: "#8b8b8b" }}>
+                <strong style={{ color: "white" }}>Herausforderung:</strong> Das
+                Frontend umfasst alles, was der Benutzer einer Software oder
+                einer Webseite sieht, berührt und erlebt. Das Back-End bezieht
+                sich auf alles, was der Benutzer einer Software oder einer
+                Website nicht sehen kann.
+              </Typography>
+            </Box>
+
+            <Box
+              sx={{
+                marginBottom: "12px",
+              }}
+            >
+              <Typography variant='p' sx={{ color: "#8b8b8b" }}>
+                <strong style={{ color: "white" }}>Herausforderung:</strong> Das
+                Frontend umfasst alles, was der Benutzer einer Software oder
+                einer Webseite sieht, berührt und erlebt. Das Back-End bezieht
+                sich auf alles, was der Benutzer einer Software oder einer
+                Website nicht sehen kann.
+              </Typography>
+            </Box>
+            <Box
+              sx={{
+                marginBottom: "12px",
+              }}
+            >
+              <Typography variant='p' sx={{ color: "#8b8b8b" }}>
+                <strong style={{ color: "white" }}>Herausforderung:</strong> Das
+                Frontend umfasst alles, was der Benutzer einer Software oder
+                einer Webseite sieht, berührt und erlebt. Das Back-End bezieht
+                sich auf alles, was der Benutzer einer Software oder einer
+                Website nicht sehen kann.
+              </Typography>
+            </Box>
+          </Grid>
+          <Typography variant='p' sx={{ textAlign: "center", padding: "12px" }}>
+            »Piri Web betreut uns mittlerweile schon über 2 Jahre und unsere
+            Wünsche wurden immer übertroffen. Ich schätze an Piri Web besonders
+            die schnelle Verfügbarkeit bei Rückfragen und die Transparenz in der
+            Prozessgestaltung.«
+          </Typography>
+        </Grid>
+
+        <Box
+          sx={{ display: "flex", justifyContent: "center", padding: "40px" }}
+        >
+          <Button variant='contained'>Noch mehr Referenzen</Button>
+        </Box>
       </Wrapper>
     </StyledBox>
   );

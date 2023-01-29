@@ -6,6 +6,7 @@ import OutlinedCard from "@/components/OutlinedCard/OutlinedCard";
 import Image from "next/image";
 import TextComponent from "@/components/TextComponent/TextComponent";
 import profilePic from "../../../public/img/bilgekaan-transparent.png";
+import CustomButton from "@/components/CustomButton/CustomButton";
 
 const StyledBox = styled(Box)(({ theme }) => ({
   color: "black",
@@ -32,7 +33,7 @@ const BenefitSection = () => {
               alignItems: "center",
             }}
           >
-            <Typography variant='h3'>Lass uns reden.</Typography>
+            <Typography variant='h3'>Lass uns sprechen.</Typography>
             <TextComponent
               header='Schritt 1'
               content='Klicke auf den Link und sichere Dir einer der freien 30-Min-Termine in den kommenden Tagen.'
@@ -46,7 +47,7 @@ const BenefitSection = () => {
               content='Wir zeigen Dir genau ob und wie eine Umsetzung aussehen kann. Unabhängig davon, wirst Du eigene Ansätze aus dem Gespräch mitnehmen können'
             />
             <div style={{ flex: 1, display: "flex", alignItems: "center" }}>
-              <Button variant='contained'>Termin sichern</Button>
+              <CustomButton>Termin sichern</CustomButton>
             </div>
           </Grid>
 

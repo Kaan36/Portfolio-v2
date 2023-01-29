@@ -2,6 +2,7 @@ import React from "react";
 
 import Wrapper from "../../components/Wrapper/Wrapper";
 import { Box, styled, Button, Typography } from "@mui/material";
+import CustomButton from "@/components/CustomButton/CustomButton";
 
 const StyledBox = styled(Box)(({ theme }) => ({
   minHeight: "90vh",
@@ -36,12 +37,13 @@ const LandingpageSection = () => {
     <StyledBox>
       <Wrapper>
         <StyledLandingSubHeader>
-          Für Unternehmen die professionell in den Markt einsteigen wollen
+          Für Unternehmen die Ihre Idee professionell an den Markt bringen
+          wollen
         </StyledLandingSubHeader>
         <StyledLandingHeader>
-          In kürzester Zeit digital Durchstarten
+          In kurzer Zeit digital Durchstarten
         </StyledLandingHeader>
-        <Button variant='contained'>Jetzt Durchstarten</Button>
+        <CustomButton>Erfahre wie</CustomButton>
       </Wrapper>
     </StyledBox>
   );

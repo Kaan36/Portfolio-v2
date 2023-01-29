@@ -4,6 +4,7 @@ import Image from "next/image";
 import profilePic from "../../../public/img/bilgekaan.png";
 import { Box, Grid, styled, Button, Typography } from "@mui/material";
 import Wrapper from "@/components/Wrapper/Wrapper";
+import CustomButton from "@/components/CustomButton/CustomButton";
 
 const StyledBox = styled(Box)(({ theme }) => ({
   backgroundColor: "black",
@@ -59,11 +60,11 @@ const ExpertSection = () => {
                 color: "#8b8b8b",
               }}
             >
-              Seit 2016 bin ich in der Web Entwicklung zuhause und habe schon
+              Seit Jahren bin ich in der Web-Entwicklung zu Hause und habe schon
               zahlreiche Web & App Projekte umgesetzt, begleitet und erfolgreich
-              gelaunched. Dabei weiß ich genau welche Fallstricke man beachten
-              muss um ein erfolgreiches Projekt auf die Beine zu stellen.
-              Außerdem kann Ich Dich unabhängig von einer möglichen
+              gelaunched. Dabei weiß ich genau, welche Fallstricke man beachten
+              muss, um ein erfolgreiches Projekt auf die Beine zu stellen.
+              Außerdem kann ich Dich unabhängig von einer möglichen
               Zusammenarbeit beraten, damit Du die beste Lösung für Dein Projekt
               erreichen kannst.
               <br />
@@ -72,12 +73,12 @@ const ExpertSection = () => {
             </p>
 
             <ul className='expert-list'>
-              <li>über 100 Web & App Projekte umgesetzt</li>
-              <li>6 Jahre in der Web & App Entwicklung</li>
-              <li>über 10 Jahre Erfahrung in der IT</li>
+              <li>mehrere Web & App Projekte umgesetzt</li>
+              <li>2+ Jahre in der Web & App Entwicklung</li>
+              <li>über 5 Jahre Erfahrung in der IT</li>
               <li>Erhöhte persönliche Erreichbarkeit</li>
             </ul>
-            <Button variant='contained'>Lass uns reden</Button>
+            <CustomButton variant='contained'>Lass uns reden</CustomButton>
           </Grid>
         </Grid>
       </Wrapper>

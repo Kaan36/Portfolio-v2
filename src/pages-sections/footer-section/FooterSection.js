@@ -10,6 +10,7 @@ import {
 } from "@mui/material";
 import Wrapper from "@/components/Wrapper/Wrapper";
 import TextComponent from "@/components/TextComponent/TextComponent";
+import CustomButton from "@/components/CustomButton/CustomButton";
 
 const StyledBox = styled(Box)(({ theme }) => ({
   backgroundColor: "white",
@@ -33,15 +34,11 @@ const FooterSection = () => {
       <Wrapper>
         <StyledFooternHeader>Kontaktiere mich</StyledFooternHeader>
         <Typography variant='p' component='div' sx={{ textAlign: "center" }}>
-          Jahrelange Erfahrung und das Realisieren von unzähligen Projekten
-          machen uns zu Experten in der Digitalisierung. Die Kombination aus
-          einem dynamischen Team und den unseren breitgefächerten
-          Erfahrungswerten, macht uns zur einer der agilsten IT Unternehmen aus
-          dem Münsterland. Denn die präzise und individuelle Umsetzung des
-          Projekts sowie Deine Zufriedenheit ist die DNA unserer Software
-          Agentur in Münster. Ganz egal, ob es sich um eine exklusive Software,
-          eine Website oder um die Entwicklung einer App handelt, wir sind Dein
-          Ansprechpartner für IT Dienstleistungen.
+          Lass Sie uns mit einem unverbindlichen Erstgespräch starten. Wir
+          schauen uns gemeinsam Ihren aktuellen Stand an und erarbeiten uns
+          zusammen einen Lösungsweg. Außerdem bekommen Sie im Erstgespräch von
+          mir Tipps und praktische Informationen, um Ihre Internetpräsenz
+          Erfolgreich zu startem. Ich freue mich Sie kennenzulernen.
         </Typography>
         <Grid container>
           <Grid
@@ -59,7 +56,8 @@ const FooterSection = () => {
               content='Wir unterhalten uns gemeinsam in einem 30-Minütigen Call über Dein Vorhaben. Ganz unverbindlich und ohne Kosten.'
             />
             <div style={{ display: "flex", justifyContent: "center" }}>
-              <Button variant='contained'>Termin reservieren</Button>
+              {/* <Button variant='contained'>Termin reservieren</Button> */}
+              <CustomButton>Termin reservieren</CustomButton>
             </div>
           </Grid>
           <Grid
@@ -73,7 +71,7 @@ const FooterSection = () => {
               //   alignItems: "center",
             }}
           >
-            <TextComponent header='Schreibe mir eine kurze E-Mail' content='' />
+            <TextComponent header='Schreib mir eine kurze E-Mail' content='' />
             <TextField className='textfield' label='Name' variant='standard' />
             <TextField
               className='textfield'
@@ -92,9 +90,7 @@ const FooterSection = () => {
               rows={4}
               variant='standard'
             />
-            <Button variant='contained' sx={{ width: "120px" }}>
-              Absenden
-            </Button>
+            <CustomButton type='small'>Absenden</CustomButton>
           </Grid>
         </Grid>
       </Wrapper>

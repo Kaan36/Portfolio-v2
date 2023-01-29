@@ -33,29 +33,29 @@ const CompetenceSection = () => {
           <Grid item xs={12} sm={6}>
             <CompetenceCard
               image='/img/react-development.jpg'
-              header='Web3 Development'
-              content='Wir bieten Dir professionelle Dienstleistungen rund um die Themen Blockchain und Smart Contracts. Wir entwickeln Anwendungen für Unternehmen, welche auf der Ethereum Plattform basieren.'
+              header='Cloud Service'
+              content='Die Auslagerung von IT-Systemen in die Cloud ist eines der großen Themen mit der sich Firmen unabhängig von Größe und Branche derzeit beschäftigen.'
             />
           </Grid>
           <Grid item xs={12} sm={6}>
             <CompetenceCard
               image='/img/webflow.jpg'
               header='Webflow & Wordpress'
-              content='Mach dir keine Sorge um Design oder Inhalt. Wir setzen Deinen Web Auftritt professionell um. Strahle mit einer neuen & frischen Website für dein Unternehmen.'
+              content='Mach dir keine Sorge um Design oder Inhalt. Ich setze Deinen Web Auftritt professionell um. Strahle mit einer neuen & frischen Website für dein Unternehmen.'
             />
           </Grid>
           <Grid item xs={12} sm={6}>
             <CompetenceCard
               image='/img/react-development.jpg'
-              header='Laravel/Vue.js'
-              content='Buchungsplattform, B2B Shop oder doch nur eine interne Schnittstelle. Mit unseren Laravel & Vue.js Skills können wir jede Idee individuell umsetzen.'
+              header='Node/Next.js'
+              content='Buchungsplattform, B2B Shop oder doch nur eine interne Schnittstelle. Mit unseren Vercel & Next.js Skills können wir jede Idee individuell umsetzen.'
             />
           </Grid>
           <Grid item xs={12} sm={6}>
             <CompetenceCard
               image='/img/app-development.jpg'
               header='App Entwicklung'
-              content='Mit einer nativen App konvertierst Du Besuche zu wiederkehrenden Kunden und baust eine ganz andere Bindung auf. Wir entwickeln Dir mit React Native eine Cross Plattform App für iOS & Android.'
+              content='Mit einer nativen App konvertierst Du Besuche zu wiederkehrenden Kunden und baust eine ganz andere Bindung auf. Ich entwickel Dir mit React Native eine Cross Plattform App für iOS & Android.'
             />
           </Grid>
         </Grid>
